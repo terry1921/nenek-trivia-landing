@@ -1,3 +1,11 @@
+@use '../_scss/default' as *;
+
 @import 'normalize.css';
-@import '../node_modules/rqrauhvmra__tobi/css/tobi.css';
-@import '../_scss/default';
+@import 'basiclightbox/dist/basicLightbox.min.css';
+
+.basicLightbox__placeholder img {
+  display: block;
+  max-width: 100%;
+  max-height: 100vh;
+  object-fit: contain;
+}

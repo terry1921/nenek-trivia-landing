@@ -1,15 +1,15 @@
-/* eslint-disable import/no-extraneous-dependencies */
-const Merge = require('webpack-merge');
-const ProdConfig = require('./webpack.prod.js');
 const path = require('path');
+const { merge } = require('webpack-merge');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
+const ProdConfig = require('./webpack.prod.js');
 
-module.exports = Merge(ProdConfig, {
+module.exports = merge(ProdConfig, {
   plugins: [
     new WebpackPwaManifest({
-      name: 'Mobile App Name',
-      short_name: 'Mobile App Name',
-      description: 'A super tagline for the mobile app',
+      filename: 'assets/manifest.json',
+      name: 'Nenek Trivia',
+      short_name: 'Nenek Trivia',
+      description: '¡Hola! en Tenek',
       orientation: 'portrait',
       display: 'standalone',
       start_url: '/',
@@ -17,8 +17,9 @@ module.exports = Merge(ProdConfig, {
       background_color: '#efeeff',
       icons: [
         {
-          src: path.resolve('icon.png'),
+          src: path.resolve(__dirname, '../icon.png'),
           sizes: [96, 128, 192, 256, 384, 512],
+          destination: 'assets',
         },
       ],
     }),

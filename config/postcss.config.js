@@ -1,9 +1,7 @@
-// eslint-disable-next-line no-unused-vars
-module.exports = ({ file, options, env }) => ({
-  parser: 'postcss-scss',
-  plugins: {
-    'postcss-import': {},
-    autoprefixer: {},
-    cssnano: env === 'production' ? {} : false,
-  },
+module.exports = () => ({
+  plugins: [
+    require('postcss-import')(),
+    require('autoprefixer')(),
+    ...(process.env.NODE_ENV === 'production' ? [require('cssnano')()] : []),
+  ],
 });
