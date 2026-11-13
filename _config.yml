@@ -7,7 +7,7 @@ title: Nenek Trivia
 email: terryrockstar22@gmail.com
 description: ¡Hola! en Tenek
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nenek-trivia.web.app/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://nenek-trivia.web.app" # the base hostname & protocol for your site, e.g. http://example.com
 theme_color: '#efeeff'
 twitter_username: Terry_rockstar
 github_username:  terry0022
@@ -24,7 +24,6 @@ social:
     - https://github.com/terry0022
 
 languages: ["es"]
-ampdir: amp
 
 github: https://github.com/terry0022/nenek-trivia-landing
 
@@ -44,8 +43,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - octopress-minify-html
-  - amp-jekyll
 
 ### Exclude from processing.
 exclude:
