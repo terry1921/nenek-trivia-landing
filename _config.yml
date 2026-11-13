@@ -61,5 +61,7 @@ exclude:
   - config
   - optimization-fix
   - optimization-fix-this-file-is-ignored.js
+  - privacy.html
+  - terms.html
   - icon.png
   - docs
