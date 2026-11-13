@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Privacy policy
-permalink: /privacy/
+title: Lactaguia privacy policy
+permalink: /privacy-lacta/
 ---
 
 **Privacy Policy**
