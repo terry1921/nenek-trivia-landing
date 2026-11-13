@@ -145,10 +145,6 @@ h1, h2 {
   }
 }
 
-.tobi-zoom__icon {
-  display: none;
-}
-
 // Components
 
 .app {
@@ -168,10 +164,9 @@ h1, h2 {
 
   &__logo-wrapper {
     display: inline-block;
-    background-image: url('/assets/images/ios-mask-border-128.svg');
     background-size: contain;
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
     padding: 1px;
     margin-right: 64px;
     width: 100%;

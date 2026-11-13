@@ -12,4 +12,8 @@ footer:
       url: https://paypal.me/terry0022
       target: _blank
     - title: Aviso de Privacidad
-      url: /privacy
+      url: /privacy/
+      target: _self
+    - title: Términos y Condiciones
+      url: /terms/
+      target: _self
