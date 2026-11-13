@@ -1,11 +1,13 @@
 name: Nenek Trivia
-description: ¿Cuánto conoces de la Huasteca Potosina? ¡Ven y descúbrelo en esta nueva App!
-full_description: '<p>La huasteca potosina es una de las cuatro regiones mas ricas en cuanto a biodiversidad, cultura y tradiciones del estado de San Luis Potosí.</p>
-<p>Nenek Trivia es una aplicación en la cual pondrás a prueba tus conocimientos sobre esta hermosa región con diferentes preguntas, a través de las cuales descubrirás su geografía, sus tradiciones, su gastronomía y parte de la historia de sus municipios, forma parte de Nenek Trivia y contesta las preguntas antes de que termine el tiempo, junta todos los puntos que puedas para estar en la lista de mejores jugadores.</p>
-<p>Invita a tus amigos a participar y competir para saber quien tiene mayor conocimiento acerca de la Huasteca Potosina.</p>'
+description: Pon a prueba lo que sabes de la Huasteca Potosina con preguntas sobre su historia, cultura y tradiciones.
+full_description: '<p>Descubre la Huasteca Potosina mientras juegas. Responde preguntas sobre sus municipios, historia, geografía, tradiciones y gastronomía antes de que termine el tiempo. Consulta consejos, suma puntos y compara tu puntuación en el cuadro de honor.</p>'
 android: https://play.google.com/store/apps/details?id=com.fenixarts.nenektrivia
 screenshots:
-  - 1.png
-  - 2.png
-  - 3.png
-  - 4.png
+  - file: a1.png
+    alt: Pantalla inicial de Nenek Trivia con acceso a una partida.
+  - file: a2.png
+    alt: Inicio del juego Nenek Trivia en un teléfono Android.
+  - file: a3.png
+    alt: Cuadro de honor con las puntuaciones de los jugadores.
+  - file: a4.png
+    alt: Opciones de respuesta para preguntas sobre la Huasteca Potosina.

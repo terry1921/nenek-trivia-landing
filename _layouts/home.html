@@ -3,7 +3,7 @@ layout: default
 ---
 <header class="app__header container">
   <div class="app__logo-wrapper">
-    <img class="app__logo" src="/assets/images/appicon.png" alt="{{ site.data.app.name }} Icon">
+    <img class="app__logo" src="/assets/images/ic_launcher.webp" alt="{{ site.data.app.name }} Icon">
   </div>
   <div class="app__infos">
     <h1 class="app__name">{{ site.data.app.name }}</h1>
@@ -27,8 +27,8 @@ layout: default
   <div class="app__screenshots-wrapper container-desktop">
     <div class="app__screenshots-list">
       {% for screenshot in site.data.app.screenshots %}
-      <a href="/assets/images/screenshots/{{ screenshot }}" class="lightbox">
-       <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
+      <a href="/assets/images/screenshots/{{ screenshot.file }}" class="lightbox">
+       <img src="/assets/images/screenshots/{{ screenshot.file }}" class="app__screenshot" alt="{{ screenshot.alt | escape }}">
       </a>
       {% endfor %}
     </div>

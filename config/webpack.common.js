@@ -33,6 +33,9 @@ module.exports = {
       patterns: [{
         from: path.resolve(projectRoot, '_images'),
         to: 'assets/images',
+        globOptions: {
+          ignore: ['**/screenshots/5.png'],
+        },
       }],
     }),
   ],
