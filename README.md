@@ -47,6 +47,6 @@ La compilación del HTML de Jekyll no usa un minificador adicional. Se retiraron
 
 ## CI y publicación
 
-Los pull requests ejecutan `npm ci` y `npm run build` antes de publicar una vista previa en Firebase Hosting. Los pull requests desde forks también compilan; el despliegue de preview se limita a ramas del mismo repositorio porque usa el secreto de Firebase. Los fallos de instalación o compilación detienen el workflow antes del despliegue.
+Los pull requests ejecutan `npm ci` y `npm run build` antes de publicar una vista previa en Firebase Hosting. La landing se compila con Node 26; el paso de Firebase usa Node 24 y Firebase CLI 15.36.0. Los pull requests desde forks también compilan; el despliegue de preview se limita a ramas del mismo repositorio porque usa el secreto de Firebase. Los fallos de instalación o compilación detienen el workflow antes del despliegue.
 
 `development` es la rama de integración. `master` es la rama predeterminada y de publicación: cada push en `master` compila el sitio y lo despliega al canal live de Firebase Hosting en el proyecto `nenek-trivia`. Para publicar cambios, intégralos primero en `development` y después promueve esa rama a `master` mediante un pull request.
